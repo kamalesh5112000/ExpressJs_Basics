@@ -6,10 +6,10 @@ const rootDir=require('../util/path')
 const router = express.Router();
 
 
-router.get('/add-product', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'..','Views','add-product.html'));
+router.get('/contact', (req, res, next) => {
+    res.sendFile(path.join(__dirname,'..','Views','contact.html'));
 });
-router.post('/add-product', (req, res, next) => {
+router.post('/success', (req, res, next) => {
     console.log(req.body);
     res.redirect('/');
 });
