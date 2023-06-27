@@ -11,7 +11,7 @@ router.get('/contact', (req, res, next) => {
 });
 router.post('/success', (req, res, next) => {
     console.log(req.body);
-    res.redirect('/');
+    res.send('<h1> "Form successfuly filled"</h1>');
 });
 
 module.exports=router;
